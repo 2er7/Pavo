@@ -69,8 +69,6 @@ class UsersManagementController extends Controller
         $validator = Validator::make($request->all(),
             [
                 'name'                  => 'required|max:255|unique:users',
-                'first_name'            => '',
-                'last_name'             => '',
                 'email'                 => 'required|email|max:255|unique:users',
                 'password'              => 'required|min:6|max:20|confirmed',
                 'password_confirmation' => 'required|same:password',
@@ -79,8 +77,6 @@ class UsersManagementController extends Controller
             [
                 'name.unique'         => trans('auth.userNameTaken'),
                 'name.required'       => trans('auth.userNameRequired'),
-                'first_name.required' => trans('auth.fNameRequired'),
-                'last_name.required'  => trans('auth.lNameRequired'),
                 'email.required'      => trans('auth.emailRequired'),
                 'email.email'         => trans('auth.emailInvalid'),
                 'password.required'   => trans('auth.passwordRequired'),
@@ -99,8 +95,6 @@ class UsersManagementController extends Controller
 
         $user = User::create([
             'name'             => $request->input('name'),
-            'first_name'       => $request->input('first_name'),
-            'last_name'        => $request->input('last_name'),
             'email'            => $request->input('email'),
             'password'         => bcrypt($request->input('password')),
             'token'            => str_random(64),
@@ -187,8 +181,6 @@ class UsersManagementController extends Controller
         }
 
         $user->name = $request->input('name');
-        $user->first_name = $request->input('first_name');
-        $user->last_name = $request->input('last_name');
 
         if ($emailCheck) {
             $user->email = $request->input('email');

@@ -38,22 +38,6 @@
 							</dd>
 
 							<dt>
-								{{ trans('profile.showProfileFirstName') }}
-							</dt>
-							<dd>
-								{{ $user->first_name }}
-							</dd>
-
-							@if ($user->last_name)
-								<dt>
-									{{ trans('profile.showProfileLastName') }}
-								</dt>
-								<dd>
-									{{ $user->last_name }}
-								</dd>
-							@endif
-
-							<dt>
 								{{ trans('profile.showProfileEmail') }}
 							</dt>
 							<dd>

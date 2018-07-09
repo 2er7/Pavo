@@ -47,10 +47,6 @@
                   {{ $user->name }}
                 </h4>
                 <p class="text-center text-left-tablet">
-                  <strong>
-                    {{ $user->first_name }} {{ $user->last_name }}
-                  </strong>
-                  <br />
                   {{ HTML::mailto($user->email, $user->email) }}
                 </p>
 
@@ -141,40 +137,6 @@
 
             <div class="clearfix"></div>
             <div class="border-bottom"></div>
-
-            @endif
-
-            @if ($user->first_name)
-
-              <div class="col-sm-5 col-xs-6 text-larger">
-                <strong>
-                  {{ trans('usersmanagement.labelFirstName') }}
-                </strong>
-              </div>
-
-              <div class="col-sm-7">
-                {{ $user->first_name }}
-              </div>
-
-              <div class="clearfix"></div>
-              <div class="border-bottom"></div>
-
-            @endif
-
-            @if ($user->last_name)
-
-              <div class="col-sm-5 col-xs-6 text-larger">
-                <strong>
-                  {{ trans('usersmanagement.labelLastName') }}
-                </strong>
-              </div>
-
-              <div class="col-sm-7">
-                {{ $user->last_name }}
-              </div>
-
-              <div class="clearfix"></div>
-              <div class="border-bottom"></div>
 
             @endif
 

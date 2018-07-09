@@ -195,12 +195,8 @@ class ProfilesController extends Controller
                 'email' => 'email|max:255',
             ];
         }
-        $additionalRules = [
-            'first_name' => 'nullable|string|max:255',
-            'last_name'  => 'nullable|string|max:255',
-        ];
 
-        $rules = array_merge($usernameRules, $emailRules, $additionalRules);
+        $rules = array_merge($usernameRules, $emailRules);
         $validator = Validator::make($request->all(), $rules);
 
         if ($validator->fails()) {
@@ -208,8 +204,6 @@ class ProfilesController extends Controller
         }
 
         $user->name = $request->input('name');
-        $user->first_name = $request->input('first_name');
-        $user->last_name = $request->input('last_name');
 
         if ($emailCheck) {
             $user->email = $request->input('email');

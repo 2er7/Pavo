@@ -30,7 +30,7 @@ HTML::macro('icon_btn', function ($url = '', $icon = '', $link_name = '', $param
 
 // SHOW USERNAME
 HTML::macro('show_username', function () {
-    $the_username = (Auth::user()->name === Auth::user()->email) ? ((is_null(Auth::user()->first_name)) ? (Auth::user()->name) : (Auth::user()->first_name)) : (((is_null(Auth::user()->name)) ? (Auth::user()->email) : (Auth::user()->name)));
+    $the_username = (Auth::user()->name === Auth::user()->email) ? ((is_null(Auth::user()->name)) ? (Auth::user()->name) : (Auth::user()->name)) : (((is_null(Auth::user()->name)) ? (Auth::user()->email) : (Auth::user()->name)));
 
     return $the_username;
 });

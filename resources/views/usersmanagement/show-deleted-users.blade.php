@@ -82,8 +82,6 @@
                                                 <td class="hidden-xxs">{{$user->id}}</td>
                                                 <td>{{$user->name}}</td>
                                                 <td class="hidden-xs hidden-sm"><a href="mailto:{{ $user->email }}" title="email {{ $user->email }}">{{ $user->email }}</a></td>
-                                                <td class="hidden-xs hidden-sm hidden-md">{{$user->first_name}}</td>
-                                                <td class="hidden-xs hidden-sm hidden-md">{{$user->last_name}}</td>
                                                 <td class="hidden-xs hidden-sm">
                                                     @foreach ($user->roles as $user_role)
 

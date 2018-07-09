@@ -69,8 +69,6 @@
                                 '<td>' + val.id + '</td>' +
                                 '<td>' + val.name + '</td>' +
                                 '<td class="hidden-xs">' + val.email + '</td>' +
-                                '<td class="hidden-xs">' + val.first_name + '</td>' +
-                                '<td class="hidden-xs">' + val.last_name + '</td>' +
                                 '<td class="hidden-sm hidden-xs"> ' + rolesHtml  +'</td>' +
                                 '<td class="hidden-sm hidden-xs hidden-md">' + val.created_at + '</td>' +
                                 '<td class="hidden-sm hidden-xs hidden-md">' + val.updated_at + '</td>' +

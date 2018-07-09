@@ -40,8 +40,6 @@ return [
     'forgot'          => 'Forgot Your Password?',
     'forgot_message'  => 'Password Troubles?',
     'name'            => 'Username',
-    'first_name'      => 'First Name',
-    'last_name'       => 'Last Name',
     'confirmPassword' => 'Confirm Password',
     'register'        => 'Register',
 

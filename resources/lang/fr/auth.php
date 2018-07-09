@@ -40,8 +40,6 @@ return [
     'forgot'          => 'Mot de passe oublié ?',
     'forgot_message'  => 'Problème de mot de passe ?',
     'name'            => 'Nom utilisateur',
-    'first_name'      => 'Prénom',
-    'last_name'       => 'Nom',
     'confirmPassword' => 'Confirmez mot de passe',
     'register'        => 'S\'enregistrer',
 
