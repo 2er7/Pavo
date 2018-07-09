@@ -11,13 +11,12 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <p class="text-center mb-3">
-                            Login with
-                        </p>
-
                         <div class="row">
-                            <div class="col-sm-12 mb-2">
-                                {!! HTML::icon_link(route('social.redirect',['provider' => 'github']), 'fa fa-github', 'GitHub', array('class' => 'btn btn-block btn-social btn-github')) !!}
+                            <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+                                <p class="text-center mb-4">
+                                    Logins with  
+                                </p>
+                                @include('partials.socials')
                             </div>
                         </div>
 
