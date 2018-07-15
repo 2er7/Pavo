@@ -9,6 +9,7 @@
         "creativeorange/gravatar": "~1.0",
         "doctrine/dbal": "^2.5",
         "fideloper/proxy": "^4.0",
+        "graham-campbell/github": "^7.3",
         "intervention/image": "^2.4",
         "jaybizzle/laravel-crawler-detect": "1.*",
         "jeremykenedy/laravel-exception-notifier": "^1.1",
@@ -22,6 +23,7 @@
         "laravel/socialite": "^3.0",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.5",
+        "php-http/guzzle6-adapter": "^1.1",
         "pusher/pusher-php-server": "^3.0",
         "rap2hpoutre/laravel-log-viewer": "^0.10.4"
     },
