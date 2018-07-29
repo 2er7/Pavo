@@ -14,6 +14,7 @@ class UserController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->region = trans('region.global');
     }
 
     /**
@@ -29,6 +30,11 @@ class UserController extends Controller
             return view('pages.admin.home');
         }
 
-        return view('pages.user.home');
+        $data = [
+            'service_name' => trans('service.home'),
+            'region' => $this->region,
+        ];
+
+        return view('pages.user.home')->with($data);
     }
 }
