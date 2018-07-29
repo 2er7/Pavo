@@ -56,6 +56,17 @@ Route::group(['middleware' => ['auth', 'activated', 'activity', 'twostep']], fun
         'as'   => '{username}',
         'uses' => 'ProfilesController@show',
     ]);
+
+    
+    Route::get('/domain', [
+        'as' => 'service.domain',
+        'uses' => 'DomainController@index',
+    ]);
+
+    Route::get('/domain/{id}', [
+        'as' => 'service.domain.id',
+        'uses' => 'DomainController@show',
+    ]);
 });
 
 // Registered, activated, and is current user routes.

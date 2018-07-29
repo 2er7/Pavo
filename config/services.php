@@ -41,4 +41,8 @@ return [
         'redirect'      => env('GITHUB_REDIRECT'),
     ],
 
+    'domain' => [
+        'region'    => 'global'
+    ],
+
 ];
