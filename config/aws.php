@@ -21,6 +21,10 @@ return [
         'key'    => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
     ],
+    'credentials_cn' => [
+        'key' => env('AWSCN_ACCESS_KEY_ID'),
+        'secret' => env('AWSCN_SECRET_ACCESS_KEY'),
+    ],
     'region' => env('AWS_REGION', 'us-east-1'),
     'version' => 'latest',
     'ua_append' => [

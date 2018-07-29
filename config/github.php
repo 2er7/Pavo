@@ -59,6 +59,15 @@ return [
             // 'enterprise'   => false,
         ],
 
+        'jwt' => [
+            'token'        => 'your-jwt-token',
+            'method'       => 'jwt',
+            // 'backoff'      => false,
+            // 'cache'        => false,
+            // 'version'      => 'v3',
+            // 'enterprise'   => false,
+        ],
+
         'other' => [
             'username'   => env('GITHUB_USERNAME'),
             'password'   => env('GITHUB_PASSWORD'),
