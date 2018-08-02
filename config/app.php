@@ -171,6 +171,7 @@ return [
         jeremykenedy\laravelexceptionnotifier\LaravelExceptionNotifier::class,
         Aws\Laravel\AwsServiceProvider::class,
         Overtrue\LaravelLang\TranslationServiceProvider::class,
+        GrahamCampbell\DigitalOcean\DigitalOceanServiceProvider::class,
 
     ],
 
@@ -228,6 +229,7 @@ return [
         'Image'        => Intervention\Image\Facades\Image::class,
         'Uuid'         => Webpatser\Uuid\Uuid::class,
         'AWS'          => Aws\Laravel\AwsFacade::class,
+        'DigitalOcean' => GrahamCampbell\DigitalOcean\Facades\DigitalOcean::class,
     ],
 
 ];
