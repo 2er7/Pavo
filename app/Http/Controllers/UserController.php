@@ -31,7 +31,7 @@ class UserController extends Controller
         }
 
         $data = [
-            'service_name' => trans('service.home'),
+            'serviceName' => trans('service.home'),
             'region' => $this->region,
         ];
 
