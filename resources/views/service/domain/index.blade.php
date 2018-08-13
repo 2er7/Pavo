@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-	{{--  {{ $user->name }}'s Profile  --}}
+    {{ $serviceName }}
 @endsection
 
 
